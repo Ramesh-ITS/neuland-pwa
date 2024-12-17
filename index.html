@@ -1,35 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact PWA</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuland Business Card</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .card {
+            width: 350px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        .header {
+            background-color: #004c26;
+            color: white;
+            padding: 20px;
+        }
+        .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .header h1, .header h2 {
+            margin: 0;
+            font-size: 1.4em;
+        }
+        .header h2 {
+            font-weight: normal;
+            font-size: 1em;
+            margin-top: 5px;
+        }
+        .content {
+            padding: 20px;
+            color: #333;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        .content a {
+            color: #007d38;
+            text-decoration: none;
+        }
+        .content .info {
+            margin: 10px 0;
+        }
+        .content .info i {
+            color: #007d38;
+            margin-right: 10px;
+        }
+        .footer {
+            background: #e6f5eb;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #007d38;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Neuland Labs</h1>
-  </header>
+    <div class="card">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="saharsh.jpg" alt="Profile Photo">
+            <h1>Saharash Davuluri</h1>
+            <h2>Vice Chairman and Managing Director</h2>
+            <p>Neuland Laboratories Limited</p>
+        </div>
  
-  <main>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Phone: <a href="tel:+919871837304">+919871837304</a></p>
-      <!--<button id="save-contact">Save to Contacts</button> -->
-      <a href="intent://create_contact?name=Neuland+Labs&phone=+919871837304#Intent;scheme=tel;end;">
-        Save to Contacts
-      </a>
-      <button id="share">Share</button>
-    </section>
+        <!-- Contact Information -->
+        <div class="content">
+            <div class="info">
+                <i>🌐</i><a href="https://www.neulandlabs.com/">Visit our Website</a>
+            </div>
+            <div class="info">
+                <i>✉️</i><a href="mailto:saharsh@neulandlabs.com">saharsh@neulandlabs.com</a>
+            </div>
+            <div class="info">
+                <i>📍 Location: </i>
+                <p>
+                    11th Floor (5th Level, Phoenix IVY III)<br>
+                    Building Plot No. 573A, Neuland Labs,<br>
+                    Rd Number 82, Jubilee Hills, Hyderabad-500033,<br>
+                    Telangana, India
+                </p>
+            </div>
+            <div class="info">
+                <i>🔗</i> <a href="https://www.linkedin.com/in/saharshdhavuluri">Connect with me on LinkedIn</a>
+            </div>
+            <div class="info">
+                <i>📞</i> +91 4067611600
+            </div>
+            
+                <button id="share" style="background-color: #004632;color:white;border-radius: 25px;">Share</button>
+         
+           
+                <button id="save-contact" style="background-color: #004632;color:white;border-radius: 25px;">Save to Contacts</button>
+          
+            
+            
+        </div>
  
-    <section id="social-media">
-      <h2>Follow Us</h2>
-<a href="https://www.twitter.com/neulandlabs" target="_blank">Twitter</a>
-<a href="https://www.linkedin.com/company/neulandlabs" target="_blank">LinkedIn</a>
-    </section>
-  </main>
- 
-  <script src="app.js"></script>
+        <!-- Footer -->
+        <div class="footer">
+            Neuland Laboratories Limited
+        </div>
+    </div>
+     <script src="app.js"></script>
 </body>
 </html>
+ 

@@ -3,7 +3,7 @@ document.getElementById('share').addEventListener('click', () => {
     if (navigator.share) {
       navigator.share({
         title: 'Contact Neuland Labs',
-  text: 'Reach out to Neuland Labs at +1234567890 or visit www.neulandlabs.com.',
+  text: 'Reach out to Saharsh at +91 4067611600 or visit www.neulandlabs.com.',
   url: 'https://www.neulandlabs.com'
       }).catch((error) => console.log('Error sharing:', error));
     } else {
@@ -16,7 +16,7 @@ document.getElementById('share').addEventListener('click', () => {
     const vCard = `BEGIN:VCARD
   VERSION:3.0
   FN:Neuland Labs
-  TEL:+919871837304
+  TEL:+91 4067611600
   URL:https://www.neulandlabs.com
   END:VCARD`;
    
