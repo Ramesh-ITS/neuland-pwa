@@ -16,7 +16,7 @@ document.getElementById('share').addEventListener('click', () => {
     const vCard = `BEGIN:VCARD
   VERSION:3.0
   FN:Neuland Labs
-  TEL:+1234567890
+  TEL:+919871837304
   URL:https://www.neulandlabs.com
   END:VCARD`;
    
