@@ -59,7 +59,7 @@ document.getElementById('share').addEventListener('click', () => {
     var url = URL.createObjectURL(blob);
     
     if (navigator.share) {
-    
+       
       navigator.share({
       
         title: 'New Contacts',
