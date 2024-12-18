@@ -3,7 +3,7 @@ document.getElementById('share').addEventListener('click', () => {
     if (navigator.share) {
       navigator.share({
         title: 'Contact Neuland Labs',
-  text: 'Reach out to Saharsh at +91 4067611600 or visit www.neulandlabs.com.',
+  text: 'Reach out to Saharsh at +91 9885427270 or visit https://www.linkedin.com/in/saharshdavuluri.',
   url: 'https://www.neulandlabs.com'
       }).catch((error) => console.log('Error sharing:', error));
     } else {
